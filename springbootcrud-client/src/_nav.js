@@ -9,6 +9,11 @@ export default {
       name: 'Persons',
       url: '/persons',
       icon: 'icon-calendar'
+    },
+    {
+      name: 'Suppliers',
+      url: '/suppliers',
+      icon: 'icon-calendar'
     }
   ]
 }

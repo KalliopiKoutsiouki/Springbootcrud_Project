@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
 // Containers
 // import Full from '@/containers/Full'
 import Dashboard from '@/containers/Dashboard'
 import HelloWorld from '@/components/HelloWorld'
 import Persons from '@/components/Persons'
+import Suppliers from '@/components/Suppliers'
 
 Vue.use(Router)
 
@@ -29,6 +29,11 @@ export default new Router({
           path: 'persons',
           name: 'Persons',
           component: Persons
+        },
+        {
+          path: 'suppliers',
+          name: 'Suppliers',
+          component: Suppliers
         }
       ]
     }

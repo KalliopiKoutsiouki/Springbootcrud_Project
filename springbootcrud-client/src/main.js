@@ -49,15 +49,18 @@ Vue.mixin({
     errorFloat (message) {
       this.$message.error({message: message, showClose: true, duration: 6000})
     },
-    showDefaultError (e) {
+    showDefaultError(e) {
       console.log(e)
       this.errorFloat(this.$message.errorAction)
     },
-    handleError (e) {
+    handleError(e) {
       this.showDefaultError(e)
     },
-    getPersons () {
+    getPersons() {
       return this.$http.get('persons?size=1000')
+    },
+    getSuppliers() {
+      return this.$http.get('suppliers?size=1000')
     }
   }
 })
